@@ -1,3 +1,5 @@
+import static org.junit.Assert.assertTrue;
+
 import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
@@ -21,5 +23,6 @@ public class MyTest {
 		bean.setProperty(Arrays.asList("no", "element", "can", "be", null));
 		Errors errors = new BeanPropertyBindingResult(bean, "bean");
 		validator.validate(bean, errors);
+		assertTrue(errors.hasErrors());
 	}
 }
