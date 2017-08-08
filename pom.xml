@@ -16,6 +16,10 @@
 			<id>spring-milestone</id>
 			<url>http://repo.spring.io/milestone/</url>
 		</repository>
+		<repository>
+			<id>spring-snapshot</id>
+			<url>http://repo.spring.io/snapshot/</url>
+		</repository>
 	</repositories>
 
 	<dependencyManagement>
@@ -23,7 +27,7 @@
 			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-framework-bom</artifactId>
-				<version>5.0.0.RC3</version>
+				<version>5.0.0.BUILD-SNAPSHOT</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
